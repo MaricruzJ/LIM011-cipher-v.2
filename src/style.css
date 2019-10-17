@@ -1,0 +1,187 @@
+html {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Arvo', serif;
+    font-family: 'Bree Serif', serif;
+    font-family: 'Maven Pro', sans-serif;
+    margin: 0px;
+    height: 100%;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+    display: block;
+    background-color: rgb(95, 191, 236);
+}
+
+header>img {
+    height: 60px;
+    padding: 12px;
+}
+
+main {
+    position: absolute;
+    height: auto;
+    /* background-image: linear-gradient(rgba(223, 223, 223, 0.658), rgb(46, 46, 46)), url('../images/3.jpg');
+    background-position: center;
+    background-size: cover; */
+    width: 100%;
+}
+
+.div-intro {
+    display: flex;
+    position: relative;
+    height: calc(100vh - 87px);
+}
+
+.intro {
+    width: 50vw;
+    text-align: center;
+    position: relative;
+    font-size: 24px;
+    height: 100%;
+    /* text-shadow: 2px 2px 2px rgb(0, 0, 0); */
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    border-radius: 10px;
+}
+
+.center>p {
+    margin: 5px;
+    font-weight: bold;
+}
+
+.div-list {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr;
+    height: 100%;
+}
+
+.content-fugitive {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    text-align: center;
+    height: auto;
+}
+
+.div-fugitive {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.div-fugitive:hover {
+    box-shadow: 0 14px 28px rgba(26, 26, 26, 0.25), 0 10px 10px rgb(34, 34, 34);
+}
+
+.content-encode, .content-decode {
+    display: flex;
+    height: calc(100% - 94px);
+}
+
+.div-informant, .div-encode, .div-act, .div-decode {
+    padding: 24px;
+    width: 50%;
+    background-color: white;
+    opacity: 0.6;
+    font-size: 16px;
+    height: 500px;
+}
+
+.red {
+    color: red;
+    font-size: 14px;
+    margin: 0px 0px;
+}
+
+.div-act {
+    text-align: center;
+}
+
+.div-act>img {
+    height: 182px;
+}
+
+input[type='text'], input[type='number'] {
+    height: 24px;
+    border-radius: 5px;
+    border: 1px solid rgb(153, 153, 153);
+    outline: none;
+    padding-left: 4px;
+    float: right;
+    width: 50%;
+}
+
+input[type='button'] {
+    background-color: rgb(110, 109, 109);
+    border-radius: 4px;
+    border: 1px solid rgb(255, 255, 255);
+    height: 36px;
+    outline: none;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    width: 100%;
+    color: #f1f1f1;
+}
+
+input[type='button']:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+img {
+    height: 120px;
+    padding: 16px;
+}
+
+textarea {
+    border-radius: 5px;
+    border: 1px solid rgb(153, 153, 153);
+    outline: none;
+    padding-left: 4px;
+    resize: none;
+    margin-bottom: 15px;
+    width: 98%;
+}
+
+.hidden {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

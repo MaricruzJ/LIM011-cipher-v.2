@@ -1,15 +1,116 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="es">
+
+<head>
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Bree+Serif|Maven+Pro|Montserrat&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css" />
+</head>
+
+<body>
+    <header class="center width-all block">
+        <img src="../images/logo_rec.png" alt="logo" class="icon-small">
+    </header>
+
+    <main class="main absolute width-all">
+        <div id="div-intro" class="div-intro flex relative center">
+            <div class="intro center middle-wv relative height-all">
+                <div id="btn-collaborator" class="center center-content absolute black border-radius">
+                    <img src="../images/people.svg" alt="imagen-people" class="icon-middle" />
+                    <p>CIUDADANO COLABORADOR</p>
+                </div>
+
+            </div>
+            <div class="intro center middle-wv relative height-all">
+                <div id="btn-police" class="center-content absolute black border-radius">
+                    <img src="../images/police.svg" alt="imagen-policia" class="icon-middle">
+                    <p>POLICÍA NACIONAL DEL PERÚ</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="div-list" class="div-list hidden grid height-all">
+            <h2 class="bold">Lista de prófugos</h2>
+            <div id="div-fugitive" class="content-fugitive grid center">
+            </div>
+        </div>
+
+        <div class="content-encode flex">
+            <div id="div-informant" class="div-informant hidden padd24 middle-wv bg-white opacity">
+                <form>
+                    <h3>Datos del Ciudadano Colaborador:</h3>
+                    <p>Nombres y apellidos: <input type="text" id="name-informant"
+                            class="input-text border-radius outline"> </p>
+                    <p>N° de cuenta BN: <input type="number" id="account-number"
+                            class="input-text border-radius outline"> </p>
+                    <p>key: <input type="number" id="offset-informant" class="input-text border-radius outline"> </p>
+                    <h3>Datos del Prófugo:</h3>
+                    <p id="p-name-fujitive"></p>
+                    <p id="p-crime"></p>
+                    <p> <strong>Ingrese Información: </strong> </p>
+                    <textarea id="text-report" cols="45" rows="5"
+                        class="border-radius outline resize-none width-all"></textarea>
+                    <input type="button" id="btn-encode" value="CIFRAR INFORMACIÓN"
+                        class="button outline pointer border-radius block width-all white">
+                </form>
+            </div>
+            <div id="div-encode" class="div-encode hidden padd24 middle-wv bg-white opacity">
+
+                <form>
+                    <h3>Datos del Ciudadano Colaborador:</h3>
+                    <p>Apellidos y Nombres: <input type="text" id="p-fullname-encode"
+                            class="input-text border-radius outline" readonly></p>
+                    <p>N° de cuenta BN: <input type="text" id="p-account-encode" class="input-text border-radius outline" 
+                            readonly></p>
+                    <p class="red"> Estos datos serán enviados cifrados, es decir quien los reciba no conocerá sus datos
+                        personales
+                    </p>
+                    <h3>Datos del Prófugo:</h3>
+                    <p id="p-name-fujitive-encode">Nombres y apellidos:</p>
+                    <p id="p-crime-encode">Delito:</p>
+                    <p> <strong>Información sobre el prófugo:</strong> </p>
+                    <textarea id="text-report-encode" cols="45" rows="5"
+                        class="border-radius outline resize-none width-all" readonly></textarea>
+                    <input type="button" id="btn-send-encode" value="ENVIAR INFORMACIÓN"
+                        class="button outline pointer border-radius block width-all white">
+                </form>
+            </div>
+        </div>
+
+        <div class="content-decode flex">
+            <div id="div-act" class="div-act hidden center padd24 middle-wv bg-white opacity">
+                <h2>- Acta N° 369 -</h2>
+                <h3>Comisión Evaluadora de Recompensas</h3>
+                <img src="../images/report.png" class="icon-big">
+                <input type="button" id="btn-get-data" value="OBTENER DATOS DEL BENEFICIARIO"
+                    class="button outline pointer border-radius block width-all white">
+            </div>
+            <div id="div-decode" class="div-decode hidden padd24 middle-wv bg-white opacity">
+                <form>
+                    <h3>Datos del Beneficiario - Cifrado</h3>
+                    <p>Nombres y apellidos: <input type="text" id="name-beneficiary"
+                            class="input-text border-radius outline" readonly> </p>
+                    <p>Número de cuenta <input type="text" id="account-beneficiary"
+                            class="input-text border-radius outline" readonly></p>
+                    <p>Ingrese key:<input type="number" id="offset-denounced" class="input-text border-radius outline">
+                    </p>
+                    <input type="button" id="btn-decode" value="DESENCRIPTAR DATOS"
+                        class="button outline pointer border-radius block width-all white">
+                    <h3>Datos Obtenidos</h3>
+                    <p>Nombres y Apellidos: <input type="text" id="text-name-decode"
+                            class="input-text border-radius outline"></p>
+                    <p>N° de cuenta BN: <input type="text" id="text-account-decode"
+                            class="input-text border-radius outline"></p>
+                    <input type="button" id="btn-send-payment" value="ENVIAR ORDEN DE PAGO"
+                        class="button outline pointer border-radius block width-all white">
+                </form>
+            </div>
+        </div>
+    </main>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
-  </body>
+</body>
+
 </html>
