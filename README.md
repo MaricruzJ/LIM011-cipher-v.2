@@ -15,6 +15,7 @@ Este proyecto consiste en cifrar información confidencial, donde a ello solo te
 ![Vistas 1](images/vista1.png)
 ![Vistas 2](images/vista2.png)
 ![Vistas 3](images/vista3.png)
+![Vistas 1](images/vista1.png)
 ![Vistas 4](images/vista4.png)
 
 ## Investigación UX
@@ -40,7 +41,7 @@ Inicialmente no tenía muy claro las vistas, por lo que hice varias y al pedir f
 ![Imagen 1][1]  ![Imagen 2][2]  ![Imagen 3][3]  ![Imagen 4][4]
 
 [1]: images/intro.png
-[2]: images/list-fujitive.png
+[2]: images/list-fugitive.png
 [3]: images/encode.png
 [4]: images/decode.png
     
@@ -52,40 +53,40 @@ Inicialmente no tenía muy claro las vistas, por lo que hice varias y al pedir f
 
 ### UX
 
-- [ ] Diseñar la aplicación pensando y entendiendo al usuario.
-- [x] Crear prototipos para obtener feedback e iterar.
-- [x] Aplicar los principios de diseño visual (contraste, alineación, jerarquía).
+- :black_square_button: Diseñar la aplicación pensando y entendiendo al usuario.
+- :white_check_mark: Crear prototipos para obtener feedback e iterar.
+- :white_check_mark: Aplicar los principios de diseño visual (contraste, alineación, jerarquía).
 
 ### HTML y CSS
 
-- [x] Uso correcto de HTML semántico.
-- [x] Uso de selectores de CSS.
-- [x] Construir tu aplicación respetando el diseño realizado (maquetación).
+- :white_check_mark: Uso correcto de HTML semántico.
+- :white_check_mark: Uso de selectores de CSS.
+- :white_check_mark: Construir tu aplicación respetando el diseño realizado (maquetación).
 
 ### DOM
 
-- [x] Uso de selectores del DOM.
-- [x] Manejo de eventos del DOM.
-- [x] Manipulación dinámica del DOM.
+- :white_check_mark: Uso de selectores del DOM.
+- :white_check_mark: Manejo de eventos del DOM.
+- :white_check_mark: Manipulación dinámica del DOM.
 
 ### Javascript
 
-- [x] Manipulación de strings.
-- [x] Uso de condicionales (if-else | switch).
-- [x] Uso de bucles (for | do-while).	
-- [x] Uso de funciones (parámetros | argumentos | valor de retorno).
-- [x] Declaración correcta de variables (const & let).
+- :white_check_mark: Manipulación de strings.
+- :white_check_mark: Uso de condicionales (if-else | switch).
+- :white_check_mark: Uso de bucles (for | do-while).	
+- :white_check_mark: Uso de funciones (parámetros | argumentos | valor de retorno).
+- :white_check_mark: Declaración correcta de variables (const & let).
 
 ### Testing
 
-- [x] Testeo de tus funciones.
+- :white_check_mark: Testeo de tus funciones.
 
 ### Git y GitHub
 
-- [x] Comandos de git (add | commit | pull | status | push).
-- [x] Manejo de repositorios de GitHub (clone | fork | gh-pages).
+- :white_check_mark: Comandos de git (add | commit | pull | status | push).
+- :white_check_mark: Manejo de repositorios de GitHub (clone | fork | gh-pages).
 
 ### Buenas prácticas de desarrollo
 
-- [x] Uso de identificadores descriptivos (Nomenclatura | Semántica).
-- [x] Uso de linter para seguir buenas prácticas (ESLINT).
+- :white_check_mark: Uso de identificadores descriptivos (Nomenclatura | Semántica).
+- :white_check_mark: Uso de linter para seguir buenas prácticas (ESLINT).
