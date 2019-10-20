@@ -53,7 +53,7 @@ Inicialmente no tenía muy claro las vistas, por lo que hice varias y al pedir f
 
 ### UX
 
-- :black_square_button: Diseñar la aplicación pensando y entendiendo al usuario.
+- :white_check_mark: Diseñar la aplicación pensando y entendiendo al usuario.
 - :white_check_mark: Crear prototipos para obtener feedback e iterar.
 - :white_check_mark: Aplicar los principios de diseño visual (contraste, alineación, jerarquía).
 
