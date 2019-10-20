@@ -8,7 +8,7 @@ Hay denuncias de ambos lados, ya que hubieron personas que suplantaron la identi
 
 ## Sobre el proyecto
 
-Este proyecto consiste en cifrar información confidencial, donde a ello solo tendrán acceso personas autorizadas y que cuenten con una llave(Número) para desencriptar la información recibida. Resguardando así los datos del ciudadano colaborador. Este proyecto fue realizado con HTML5, CSS3, VanillaJS, y Balsamiq como herramienta de prototipado.
+Este proyecto consiste en cifrar información confidencial, donde a ello solo tendrán acceso personas autorizadas y que cuenten con una :key: (Número) para desencriptar la información recibida. Resguardando así los datos del ciudadano colaborador. Este proyecto fue realizado con HTML5, CSS3, VanillaJS, y Balsamiq como herramienta de prototipado.
 
 ## Imágenes del proyecto
 
@@ -36,12 +36,18 @@ Cada cuidadano que proporciona información sobre el paradero de algún prófugo
 Inicialmente no tenía muy claro las vistas, por lo que hice varias y al pedir feedback como que descarté algunas, quité campos que eran poco relevantes y añadí otros en base a las sugerencias y observaciones que obtuve.
 
 ### Imagen del prototipo final
-  
-![PrototipoBalsamiq1](images/prototipoBalsamiq1.png)  
-![PrototipoBalsamiq2](images/prototipoBalsamiq2.png)  
-![PrototipoBalsamiq3](images/prototipoBalsamiq3.png)  
-![PrototipoBalsamiq4](images/prototipoBalsamiq4.png)  
+
+![Imagen 1][1]  ![Imagen 2][2]  ![Imagen 3][3]  ![Imagen 4][4]
+
+[1]: images/intro.png
+[2]: images/list-fujitive.png
+[3]: images/encode.png
+[4]: images/decode.png
     
+### Vista en una laptop
+
+![Animación](images/animation.gif)  
+
 ## Objetivos de aprendizaje del proyecto
 
 ### UX

@@ -8,6 +8,8 @@ const divEncode = document.getElementById('div-encode');
 const divAct = document.getElementById('div-act');
 const divDecode = document.getElementById('div-decode');
 const divFugitive = document.getElementById('div-fugitive');
+const contentEncode = document.getElementById('content-encode');
+const contentDecode = document.getElementById('content-decode');
 
 const nameInformant = document.getElementById('name-informant');
 const nameBeneficiary = document.getElementById('name-beneficiary');
@@ -101,6 +103,7 @@ btnCollaborator.addEventListener('click', () => {
         fugitiveReward.innerHTML = fugitive.reward;
         let btnDenounce = document.createElement('input');
         btnDenounce.setAttribute('type', 'button');
+        btnDenounce.setAttribute('class', 'button outline pointer border-radius block width-all white');
         btnDenounce.setAttribute('value', 'DENUNCIAR');
         btnDenounce.setAttribute('id', 'btnDenounced' + fugitive.id);
 
@@ -113,17 +116,20 @@ btnCollaborator.addEventListener('click', () => {
         divFugitive.appendChild(div);
 
         btnDenounce.addEventListener('click', () => {
+            contentEncode.classList.remove('hidden');
             divList.classList.add('hidden');
             divInformant.classList.remove('hidden');
-            pNameFugitive.innerHTML = 'Nombres y apellidos: ' + fugitive.name;
-            pCrime.innerHTML = 'Delito: ' + fugitive.crime;
-            pNameFugitiveEncode.innerHTML = 'Nombres y apellidos: ' + fugitive.name;
-            pCrimeEncode.innerHTML = 'Delito: ' + fugitive.crime;
+            pNameFugitive.value = fugitive.name;
+            pCrime.value = fugitive.crime;
+            pNameFugitiveEncode.value = fugitive.name;
+            pCrimeEncode.value = fugitive.crime;
         })
     });
 })
 
 btnPolice.addEventListener('click', () => {
+    contentEncode.classList.add('hidden');
+    contentDecode.classList.remove('hidden');
     divIntro.classList.add('hidden');
     divAct.classList.remove('hidden');
 })
